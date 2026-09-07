@@ -13,14 +13,21 @@ import time
 import urllib.request
 
 
+def prepare_report_dir(path):
+    evidence = path.resolve()
+    if evidence.exists():
+        evidence = evidence / ("worker-" + secrets.token_hex(6))
+    evidence.mkdir(parents=True, exist_ok=False)
+    return evidence
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--report-dir", type=Path, required=True)
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     os.chdir(root)
-    evidence = args.report_dir.resolve()
-    evidence.mkdir(parents=True, exist_ok=False)
+    evidence = prepare_report_dir(args.report_dir)
     workspace = evidence / "synthetic input"
     workspace.mkdir()
     data = evidence / "data"
