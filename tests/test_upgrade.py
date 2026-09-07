@@ -2,6 +2,7 @@
 
 from datetime import datetime, timezone
 import sqlite3
+from contextlib import closing
 import time
 from unittest.mock import patch
 from app.capture import import_browser
@@ -18,7 +19,7 @@ class CaptureTests(AppCase):
             ).total_seconds()
             * 1e6
         )
-        with sqlite3.connect(path) as db:
+        with closing(sqlite3.connect(path)) as db, db:
             db.execute("CREATE TABLE urls(url TEXT,title TEXT,last_visit_time INTEGER)")
             db.executemany(
                 "INSERT INTO urls VALUES(?,?,?)",
