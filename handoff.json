@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "handoff_revision": 1,
+  "prepared_on": "2026-09-07",
+  "repository": "danial-maqbool/ActivityGraph",
+  "application_version": "0.2.0",
+  "historical_release_commit": "77b1eb620eb7aafc32e6105ffad81d62e18375e5",
+  "local_acceptance_status": "not_run",
+  "default_port": 8764,
+  "read_first": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "docs/LOCAL_TESTING.md"
+  ],
+  "agent_prompt": "docs/LOCAL_AGENT_PROMPT.md",
+  "local_report_directory": "artifacts/local-qa",
+  "required_cases": [
+    "AG-01",
+    "AG-02",
+    "AG-03",
+    "AG-04",
+    "AG-05",
+    "AG-06",
+    "AG-07",
+    "AG-08"
+  ],
+  "note": "Historical test counts are not a new local acceptance result."
+}
