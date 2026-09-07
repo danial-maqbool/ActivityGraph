@@ -8,8 +8,13 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     required = [
-        "README.md", "project.json", "app/service.py", "app/capture.py",
-        "localdesk/vault.py", "run.py", "web/app.js",
+        "README.md",
+        "project.json",
+        "app/service.py",
+        "app/capture.py",
+        "localdesk/vault.py",
+        "run.py",
+        "web/app.js",
     ]
     for name in required:
         if not (ROOT / name).is_file():

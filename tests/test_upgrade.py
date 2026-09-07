@@ -105,7 +105,7 @@ class CaptureTests(AppCase):
     def test_firefox_uses_correct_timestamp(self):
         source = self.workspace / "places.sqlite"
         now = int(datetime.now(timezone.utc).timestamp())
-        with sqlite3.connect(source) as db:
+        with closing(sqlite3.connect(source)) as db, db:
             db.execute(
                 "CREATE TABLE moz_places(url TEXT,title TEXT,last_visit_date INTEGER)"
             )
