@@ -1,0 +1,22 @@
+{
+  "name": "ActivityGraph",
+  "repository": "ActivityGraph",
+  "slug": "activitygraph",
+  "tagline": "A private timeline for the folders you choose to follow.",
+  "port": 8764,
+  "color": "#7352c7",
+  "version": "0.2.0",
+  "description": "Keep a searchable record of file changes in folders you choose. Add notes and see which files belong to the same project.",
+  "topics": [
+    "python",
+    "local-first",
+    "offline",
+    "sqlite",
+    "self-hosted",
+    "activity-tracker",
+    "file-monitoring",
+    "privacy",
+    "timeline",
+    "knowledge-graph"
+  ]
+}

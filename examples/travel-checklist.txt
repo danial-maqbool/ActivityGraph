@@ -1,0 +1,4 @@
+Synthetic travel checklist
+- Check document expiry dates.
+- Save a local copy of the booking.
+- Prepare a packing list.
