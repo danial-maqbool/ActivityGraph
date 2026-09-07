@@ -83,3 +83,11 @@ Local-machine acceptance: **NOT RUN HERE**.
 Use PASS, FAIL, BLOCKED, NOT RUN, or NOT APPLICABLE for each case.
 Only state that local acceptance is complete when every applicable gate has evidence.
 If a permission blocks one test, record that requirement and continue unrelated tests.
+
+## Local PC acceptance: 2026-09-07
+
+Decision: PARTIAL. See [the current local acceptance report](docs/LOCAL_ACCEPTANCE_REPORT.md).
+
+Tested source `6f8b2abbbd929bc6be0b8650b2e0019f238b8916` on Windows 11 AMD64, Python 3.14.3. Runtime-only setup and real samples completed before dev installation. Windows suite: 135 run, 132 passed, 3 skipped, no failures/errors; strict exits 1. Direct-browser checks: 20 passed with actual downloads. Network-disabled Linux container on this PC: 135 tests, no skips, 20 browser checks.
+
+Windows manifest and browser synchronization checks were repaired with retained regressions. Evidence is ignored under `artifacts/local-qa/20260907-acceptance-01/`. Historical release reports remain historical. Native-session and symlink limits are detailed in the report. Worker CI report-directory reuse was repaired with two preservation regressions.
