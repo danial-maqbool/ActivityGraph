@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "handoff_revision": 1,
-  "prepared_on": "2026-09-07",
+  "handoff_revision": 2,
+  "prepared_on": "2026-09-08",
   "repository": "danial-maqbool/ActivityGraph",
   "application_version": "0.2.0",
   "historical_release_commit": "77b1eb620eb7aafc32e6105ffad81d62e18375e5",
-  "local_acceptance_status": "not_run",
+  "local_acceptance_status": "BLOCKED",
   "default_port": 8764,
   "read_first": [
     "AGENTS.md",
@@ -24,5 +24,9 @@
     "AG-07",
     "AG-08"
   ],
-  "note": "Historical test counts are not a new local acceptance result."
+  "note": "Current local acceptance is blocked by Windows symlink capability and a disposable native user/desktop session.",
+  "local_acceptance_report": "docs/LOCAL_ACCEPTANCE_REPORT.md",
+  "local_tested_commit": "191a807fc1b6dc48a4407a202aad06014c0c4122",
+  "local_followup_run": "20260908-final-acceptance-01",
+  "branch_policy": "main only; no force-push; preserve tags"
 }

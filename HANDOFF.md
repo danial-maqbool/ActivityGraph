@@ -70,7 +70,7 @@ Keep raw logs, resolved dependency lists, screenshots, and temporary outputs und
 The committed `docs/test-report.json`, `docs/browser-report.json`, and `docs/platforms/` remain historical release evidence.
 New local reports must identify their actual commit and environment. Review evidence before publishing it.
 Never commit user documents, browser history, vaults, passwords, API tokens, model weights, or .venv.
-Use a local-validation branch. Preserve existing changes. Never force-push or reset user work.
+Work on main and push only main. Preserve existing changes. Never force-push or reset user work. Keep exactly one remote branch, main; preserve tags.
 
 If a shared `localdesk/` defect is fixed, compare all five copies and apply only the relevant patch.
 Run each affected repository suite. The apps must remain independently cloneable and runnable.
@@ -91,3 +91,11 @@ Decision: PARTIAL. See [the current local acceptance report](docs/LOCAL_ACCEPTAN
 Tested source `6f8b2abbbd929bc6be0b8650b2e0019f238b8916` on Windows 11 AMD64, Python 3.14.3. Runtime-only setup and real samples completed before dev installation. Windows suite: 135 run, 132 passed, 3 skipped, no failures/errors; strict exits 1. Direct-browser checks: 20 passed with actual downloads. Network-disabled Linux container on this PC: 135 tests, no skips, 20 browser checks.
 
 Windows manifest and browser synchronization checks were repaired with retained regressions. Evidence is ignored under `artifacts/local-qa/20260907-acceptance-01/`. Historical release reports remain historical. Native-session and symlink limits are detailed in the report. Worker CI report-directory reuse was repaired with two preservation regressions.
+
+## Current target-PC follow-up: 2026-09-08
+
+Status: BLOCKED. Current report: [local acceptance](docs/LOCAL_ACCEPTANCE_REPORT.md). Tested main `191a807fc1b6dc48a4407a202aad06014c0c4122`. Fresh source/vault symlink probe failed with WinError 1314; exact tests remain two skips. The user confirmed no disposable Windows session is available. No native service or desktop controls were used in the personal profile.
+
+Runtime source is unchanged from the earlier tested revision. Its 132 passing Windows tests and 20 browser checks remain dated evidence, not reruns. Only remaining symlink capability checks were invoked this run.
+
+Current ignored evidence: `artifacts/local-qa/20260908-final-acceptance-01/`. No new application fix or regression test was needed in this run. Git policy: main only locally/remotely, no temporary remote branches, no force-push or tag rewrite.
