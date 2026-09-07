@@ -1,0 +1,29 @@
+{
+  "project": "ActivityGraph",
+  "browser": "143.0.7499.4",
+  "mode": "direct loopback navigation",
+  "checks": [
+    "Main view renders",
+    "Demo timeline contains eight labeled events",
+    "Event notes and tags can be saved",
+    "Manual note appears",
+    "Project graph has real event nodes",
+    "Monitoring remains paused",
+    "Window-title capture requires consent",
+    "Selected browser import control exists",
+    "Navigation: Timeline",
+    "Navigation: Project map",
+    "Navigation: Change groups",
+    "Navigation: Privacy and folders",
+    "Dark theme control works",
+    "Mobile viewport has no page-wide overflow",
+    "No uncaught browser errors",
+    "No external browser network request",
+    "Closing the browser leaves the worker running",
+    "Worker health remains available after browser close"
+  ],
+  "passed": 18,
+  "errors": [],
+  "seconds": 10.795,
+  "media": "Actual recorded application states, not mockups. GIF timing is illustrative."
+}
